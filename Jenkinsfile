@@ -1,7 +1,7 @@
 pipeline{
 agent{label 'bazel'}
 stages{
-stage ('build){
+stage ('build'){
 steps{
 dir('java-maven'){
   container('bazel){
