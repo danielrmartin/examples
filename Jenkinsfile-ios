@@ -1,0 +1,12 @@
+pipeline{
+agent{label 'bazel'}
+stages{
+stage ('build'){
+steps{
+  container('bazel'){
+  sh 'cd tutorial/ios-app;bazel build //:ios-app'
+  }//close container
+  }//close step
+  }//close stage
+  }//close stages
+  }//close pipeline
