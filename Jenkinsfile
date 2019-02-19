@@ -4,7 +4,7 @@ stages{
 stage ('build'){
 steps{
 dir('java-maven'){
-  container('bazel){
+  container('bazel'){
   sh 'bazel build //:java-maven'
   }//close container
   }//close dir
