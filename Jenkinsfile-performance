@@ -1,0 +1,12 @@
+pipeline{
+agent{label 'bazel'}
+stages{
+stage ('build'){
+steps{
+  container('bazel'){
+  sh 'cd ${space};bazel build //${local}:${target}'
+  }//close container
+  }//close step
+  }//close stage
+  }//close stages
+  }//close pipeline
