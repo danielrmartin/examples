@@ -4,7 +4,7 @@ stages{
 stage ('build'){
 steps{
   container('bazel'){
-  sh 'cd tutorial/ios-app;bazel build //:ios-app'
+  sh 'cd tutorial;bazel build //ios-app:ios-app'
   }//close container
   }//close step
   }//close stage
