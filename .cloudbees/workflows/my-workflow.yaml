@@ -16,8 +16,7 @@ jobs:
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          echo "hello world"
-          echo "The value for bar is ${{inputs.daniel}}"
+          echo The value for bar is ${{inputs.daniel}}
 env:
   foo: bar
   input1: "1031"
