@@ -7,8 +7,10 @@ on:
       - "**"
   workflow_dispatch:
     inputs:
-      Daniel: "Martin"
-      Rene: "Bees Knees"
+      Daniel:
+        description: "foo"
+        reguired: true
+        default: "Martin"
 jobs:
   build:
     steps:
