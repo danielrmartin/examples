@@ -7,7 +7,6 @@ on:
       daniel:
         description: "foo"
         reguired: true
-        default: "bar"
         type: String
 jobs:
   build:
@@ -18,4 +17,4 @@ jobs:
         run: |
           echo "The value for bar is $NAME"
         env:
-          NAME: ${{inputs.daniel}}
+          NAME: ${{ inputs.daniel }}
