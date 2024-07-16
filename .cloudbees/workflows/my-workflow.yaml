@@ -5,9 +5,12 @@ on:
   workflow_dispatch:
     inputs:
       daniel:
-        description: "foo"
+        description: foo
         reguired: true
         type: String
+  push:
+    branches:
+      - "**"
 jobs:
   build:
     steps:
@@ -17,4 +20,4 @@ jobs:
         run: |
           echo "The value for bar is $NAME"
         env:
-          NAME: ${{ inputs.daniel }}
+          NAME: "Daniel"
