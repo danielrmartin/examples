@@ -4,9 +4,11 @@ name: My workflow
 on:
   workflow_dispatch:
     inputs:
-      Daniel:
+      daniel:
         description: "foo"
         reguired: true
+        default: "bar"
+        type: String
 jobs:
   build:
     steps:
@@ -15,6 +17,7 @@ jobs:
         shell: sh
         run: |
           echo "hello world"
+          echo "The value for bar is ${{inputs.daniel}}"
 env:
   foo: bar
   input1: "1031"
