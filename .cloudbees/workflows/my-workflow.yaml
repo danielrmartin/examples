@@ -4,7 +4,11 @@ name: My workflow
 on:
   workflow_dispatch:
     inputs:
-      daniel:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      command:
         description: foo
         reguired: true
         type: String
