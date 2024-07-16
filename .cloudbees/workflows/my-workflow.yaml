@@ -7,7 +7,6 @@ on:
       Daniel:
         description: "foo"
         reguired: true
-        default: "Martin"
 jobs:
   build:
     steps:
