@@ -19,6 +19,3 @@ jobs:
           echo "The value for bar is $NAME"
         env:
           NAME: ${{inputs.daniel}}
-env:
-  foo: bar
-  input1: "1031"
