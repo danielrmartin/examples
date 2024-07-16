@@ -6,6 +6,9 @@ on:
     branches:
       - "**"
   workflow_dispatch:
+    inputs:
+      Daniel: "Martin"
+      Rene: "Bees Knees"
 jobs:
   build:
     steps:
