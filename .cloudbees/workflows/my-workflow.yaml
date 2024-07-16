@@ -14,3 +14,6 @@ jobs:
         shell: sh
         run: |
           echo "hello world"
+env:
+  foo: bar
+  input1: "1031"
